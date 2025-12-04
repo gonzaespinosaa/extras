@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Envíos y Pagos - Accesori.GE</title>
+    
+    <style>
+        :root {
+            --color-fondo-principal: #1a1a1a;
+            --color-texto-principal: #f8f8f8;
+            --color-header-footer: #000;
+            --color-acento: #ccc;
+            --color-card-fondo: #2a2a2a;
+        }
+
+        body {
+            background-color: var(--color-fondo-principal); 
+            color: var(--color-texto-principal); 
+            font-family: Arial, sans-serif;
+            margin: 0; 
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .container {
+            width: 90%; 
+            max-width: 1200px;
+            margin: 0 auto; 
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--color-header-footer); 
+            color: var(--color-texto-principal);
+            padding-top: 10px; 
+            padding-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .header-content {
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--color-texto-principal);
+            text-decoration: none; 
+            display: block; 
+            margin-bottom: 15px;
+        }
+        
+        nav {
+            text-align: center; 
+        }
+
+        nav ul {
+            list-style: none; 
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 25px; 
+            display: inline-block; 
+        }
+
+        nav a {
+            color: var(--color-acento); 
+            text-decoration: none; 
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #333; 
+            color: #ffffff;
+        }
+        
+        main {
+            padding: 60px 0;
+            flex-grow: 1;
+        }
+        
+        .section-title {
+            font-size: 36px;
+            color: var(--color-texto-principal);
+            border-bottom: 2px solid var(--color-acento);
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .info-card {
+            background-color: var(--color-card-fondo);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+        }
+
+        .info-card h2 {
+            color: var(--color-acento);
+            font-size: 28px;
+            margin-top: 0;
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .info-card h3 {
+            color: var(--color-texto-principal);
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card p {
+            line-height: 1.6;
+            color: var(--color-acento);
+        }
+
+        .info-card ul {
+            list-style: disc;
+            margin-left: 20px;
+            color: var(--color-acento);
+        }
+        
+        .info-card li {
+            margin-bottom: 10px;
+        }
+
+        .nav-active {
+            background-color: #333;
+            color: #ffffff !important;
+        }
+
+        footer {
+            background-color: var(--color-header-footer); 
+            color: var(--color-acento);
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            margin-top: auto;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            
+            <a href="index.html" class="logo">Accesori.GE</a>
+
+            <nav>
+                <ul>
+                    <li><a href="quienes_somos.html">Quiénes Somos</a></li>
+                    <li><a href="accesorios.html">Productos</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="envios_y_pagos.html" class="nav-active">Envíos y Pagos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <h1 class="section-title">Información de Envíos y Métodos de Pago</h1>
+        
+        <!-- Sección de Envíos -->
+        <div class="info-card">
+            <h2>Detalles de Envío</h2>
+            <p>Trabajamos con Correo Argentino para garantizar que tus productos lleguen de manera segura y rápida a tu domicilio.</p>
+            
+            <h3>Tiempos de Entrega</h3>
+            <ul>
+                <li>Procesamiento: 24 horas hábiles después de la confirmación del pago.</li>
+                <li>Envío Estándar: 5-7 días hábiles.</li>
+                <li>**Envío Express: 1-2 días hábiles (disponible en áreas seleccionadas).</li>
+            </ul>
+            <p style="margin-top: 20px;">Importante: Todos los envíos cuentan con número de seguimiento para que puedas rastrear tu paquete en tiempo real.</p>
+        </div>
+
+        <!-- Sección de Pagos -->
+        <div class="info-card">
+            <h2>Métodos de Pago Aceptados</h2>
+            <p>Ofrecemos múltiples opciones seguras y convenientes para completar tu compra:</p>
+            <ul>
+                <li>Tarjetas de Crédito y Débito (Visa, Mastercard, American Expres).</li>
+                <li>Plataformas de Pago Digital (Mercado Pago, AstroPay, Belo).</li>
+                <li>Efectivo (solo para entregas personales en puntos acordados).</li>
+            </ul>
+        </div>
+        
+    </main>
+
+</body>
+</html>
