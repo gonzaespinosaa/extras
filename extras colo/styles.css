@@ -1,0 +1,226 @@
+:root {
+    --color-dark: #1a1a1a; 
+    --color-light: #ffffff; 
+    --color-gray: #444; 
+    --color-text-light: #eee; 
+    --color-text-dark: #333; 
+    --max-width: 1200px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-gray);
+    color: var(--color-text-light);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 70px; 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+nav {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 25px; 
+    align-items: center;
+}
+
+nav a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #333; 
+}
+
+.personal-logo-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    background-color: var(--color-dark); 
+}
+.personal-logo-container:hover {
+    opacity: 0.8;
+}
+
+.personal-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--color-dark); 
+    color: var(--color-text-light);
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #aaa;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-light);
+    padding-bottom: 5px;
+    color: var(--color-light);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--color-dark); 
+    color: var(--color-text-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    transition: transform 0.3s;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(100%); 
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
+
+.card-body h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    min-height: 40px; 
+    color: var(--color-light);
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.price-buy {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: auto; 
+    padding-top: 10px; 
+}
+
+.card-destacado .price-buy {
+    padding-top: 0;
+    min-height: 30px; 
+}
+
+footer {
+    background-color: var(--color-dark);
+    color: var(--color-text-light);
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-grow: unset;
+        order: 3; 
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .personal-logo-container {
+        margin-top: 10px;
+    }
+}
